@@ -1,5 +1,5 @@
 <template>
-<!--  <header>-->
+  <header>
 <!--    <div class="header_logo">-->
 <!--      <img src="../assets/images/planet.png" alt="pizza planet icon" />-->
 <!--      <h1 class href="/">PIZZA PLANET</h1>-->
@@ -23,14 +23,17 @@
 <!--        </router-link>-->
 <!--      </ul>-->
 <!--    </nav>-->
-<!--  </header>-->
-  <v-app-bar app color="white" height="55px" scroll-off-screen>
-    <v-toolbar-title>
-      FOOD PLANET
-    </v-toolbar-title>
-    <v-spacer></v-spacer>
-    <v-btn>HOME</v-btn>
-  </v-app-bar>
+    <v-app-bar app color="white" height="55px" scroll-off-screen>
+      <v-toolbar-title>
+        FOOD PLANET
+      </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <router-link :to="{ name: 'homeLink' }" tag="li"><v-btn text>HOME</v-btn></router-link>
+      <router-link  :to="{ name: 'menuLink' }" tag="li"><v-btn text>MENU</v-btn></router-link>
+      <router-link  :to="{ name: 'contactLink' }" tag="li"><v-btn text>CONTACT</v-btn></router-link>
+      <router-link  :to="{ name: 'aboutLink' }" tag="li"><v-btn text>ABOUT</v-btn></router-link>
+    </v-app-bar>
+  </header>
 </template>
 
 <script>
@@ -45,14 +48,6 @@ h1 {
 }
 
 .header_logo {
-  background-image: linear-gradient(
-    45deg,
-    #d85226 25%,
-    #f79e38 25% 50%,
-    #d85226 50% 75%,
-    #f79e38 75%,
-    #f79e38 100%
-  );
   background-size: 80px 80px;
   display: flex;
   flex-direction: column;

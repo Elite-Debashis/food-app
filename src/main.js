@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import { store } from './store/store.js'
 import Accounting from 'accounting-js'
 import { routes } from './routes';
+import vuetify from './plugins/vuetify';
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
@@ -28,5 +29,6 @@ Vue.filter('currency', val => {
 new Vue({
   router,
   store,
-  render: h => h(App),
+  vuetify,
+  render: h => h(App)
 }).$mount('#app')

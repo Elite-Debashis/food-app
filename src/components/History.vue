@@ -1,11 +1,20 @@
 <template>
-  <div class="info_block">
-    <h3>~ History ~</h3>
-    <div class="info_block_content">
-      <img src="../assets/images/planet.png" alt />
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis non in nisi corrupti debitis dolores maxime, facilis atque harum ratione quis consequuntur fuga odit eligendi vero. Eveniet magnam distinctio tempora.</p>
-    </div>
-  </div>
+  <v-card
+      class="mx-auto"
+      width="500"
+      style="margin: 10px"
+
+  >
+    <v-img
+        class="white--text align-end"
+        src="https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466__340.jpg"
+    >
+
+    </v-img>
+    <v-card-title>HISTORY</v-card-title>
+    <v-card-subtitle>SUBTITLE</v-card-subtitle>
+    <v-card-text>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis officia rerum explicabo quia natus non temporibus debitis quod aliquid necessitatibus sit laudantium doloremque ipsum dolor, quibusdam quas ullam delectus at.</v-card-text>
+  </v-card>
 </template>
 
 <script>
