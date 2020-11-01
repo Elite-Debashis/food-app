@@ -1,4 +1,5 @@
 <template>
+  <v-container-fluid>
   <v-carousel v-model="model" hide-delimiter-background :show-arrows="false">
     <v-carousel-item v-for="(slide) in slides" :key="slide.title">
 
@@ -21,9 +22,19 @@
 
     </v-carousel-item>
   </v-carousel>
+
+  <div class="info_block_wrapper ">
+    <div v-for="(card,i) in cards" :key="i" style="margin-top: 50px">
+      <ordering-guide :card="card"></ordering-guide>
+    </div>
+
+  </div>
+  </v-container-fluid>
 </template>
 
 <script>
+import OrderingGuide from "@/components/OrderingGuide";
+
 export default {
   data:() => ({
     model: 0,
@@ -47,13 +58,40 @@ export default {
         title: "TITLE 3",
         url: '../assets/images/pizza3.jpg'
       }
-    ]
+    ],
+    cards: [
+      {
+        title: 'TITLE',
+        subTitle: 'SUBTITLE',
+        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis officia rerum explicabo quia natus non temporibus debitis quod aliquid necessitatibus sit laudantium doloremque ipsum dolor, quibusdam quas ullam delectus at.',
+        url: 'https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466__340.jpg'
+      },{
+        title: 'TITLE',
+        subTitle: 'SUBTITLE',
+        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis officia rerum explicabo quia natus non temporibus debitis quod aliquid necessitatibus sit laudantium doloremque ipsum dolor, quibusdam quas ullam delectus at.',
+        url: 'https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466__340.jpg'
+      },{
+        title: 'TITLE',
+        subTitle: 'SUBTITLE',
+        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis officia rerum explicabo quia natus non temporibus debitis quod aliquid necessitatibus sit laudantium doloremque ipsum dolor, quibusdam quas ullam delectus at.',
+        url: 'https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466__340.jpg'
+      },{
+        title: 'TITLE',
+        subTitle: 'SUBTITLE',
+        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis officia rerum explicabo quia natus non temporibus debitis quod aliquid necessitatibus sit laudantium doloremque ipsum dolor, quibusdam quas ullam delectus at.',
+        url: 'https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466__340.jpg'
+      },
+
+    ],
   }),
   name: "home",
   methods: {
     goToMenu() {
       this.$router.push({ name: "menuLink" });
     }
+  },
+  components: {
+    orderingGuide: OrderingGuide
   }
 };
 </script>

@@ -2,12 +2,7 @@
   <div id="app" class="default-font">
     <app-header></app-header>
     <router-view></router-view>
-    <div class="info_block_wrapper ">
-      <div v-for="(card,i) in cards" :key="i" style="margin-top: 50px">
-        <ordering-guide :card="card"></ordering-guide>
-      </div>
 
-    </div>
   </div>
 </template>
 
@@ -20,7 +15,7 @@ export default {
   components: {
     // should not use reserved header element name
     appHeader: Header,
-    orderingGuide: OrderingGuide
+
   },
   created() {
     this.$store.dispatch("setMenuRef", dbMenuRef);
@@ -28,30 +23,7 @@ export default {
   },
   data() {
     return {
-      cards: [
-          {
-        title: 'TITLE',
-        subTitle: 'SUBTITLE',
-        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis officia rerum explicabo quia natus non temporibus debitis quod aliquid necessitatibus sit laudantium doloremque ipsum dolor, quibusdam quas ullam delectus at.',
-        url: 'https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466__340.jpg'
-      },{
-        title: 'TITLE',
-        subTitle: 'SUBTITLE',
-        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis officia rerum explicabo quia natus non temporibus debitis quod aliquid necessitatibus sit laudantium doloremque ipsum dolor, quibusdam quas ullam delectus at.',
-        url: 'https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466__340.jpg'
-      },{
-        title: 'TITLE',
-        subTitle: 'SUBTITLE',
-        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis officia rerum explicabo quia natus non temporibus debitis quod aliquid necessitatibus sit laudantium doloremque ipsum dolor, quibusdam quas ullam delectus at.',
-        url: 'https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466__340.jpg'
-      },{
-        title: 'TITLE',
-        subTitle: 'SUBTITLE',
-        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis officia rerum explicabo quia natus non temporibus debitis quod aliquid necessitatibus sit laudantium doloremque ipsum dolor, quibusdam quas ullam delectus at.',
-        url: 'https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466__340.jpg'
-      },
 
-      ]
     }
   }
 };
