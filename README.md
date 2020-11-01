@@ -39,7 +39,7 @@ npm run build
 npm run lint
 ```
 
-### Lints and fixes files
+### Hosting
 
 Hosted on Github Pages
 
