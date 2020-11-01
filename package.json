@@ -30,17 +30,14 @@
     "env": {
       "node": true
     },
-    "rules": {
-      "no-unused-vars": "off"
-    },
+    "rules": {},
     "extends": [
       "plugin:vue/essential",
       "eslint:recommended"
     ],
     "parserOptions": {
       "parser": "babel-eslint"
-    },
-    "rules": {}
+    }
   },
   "browserslist": [
     "> 1%",
