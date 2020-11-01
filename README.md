@@ -10,6 +10,7 @@ This is a simple food delivery web-app created using VueJs and Cloud Firestore. 
 * Used Cloud Firestore for backend database which is super convenient.
 * Uses Cloud Firestore Authentication to authenticate restaurant owners using email and password.
 * NoSQL databases helps to handle data easily and more efficiently.
+* Proper State Management and Route Setup
     
 ### Technologies Used
 
