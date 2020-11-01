@@ -8,9 +8,8 @@
          </v-toolbar>
          <v-card-text>
            <v-card-title>FOOD PLANET</v-card-title>
-           <v-card-subtitle style="margin-top: 1px">ADDRESS 1</v-card-subtitle>
-           <v-card-subtitle style="margin-top: -20px">ADDRESS 2</v-card-subtitle>
-           <v-card-subtitle style="margin-top: -20px">EMAIL ID : foodplanet@gmail.com</v-card-subtitle>
+           <h3 style="margin-left: 12px">CALL US</h3>
+           <v-card-subtitle style="margin-top: -18px">EMAIL ID : foodplanet@gmail.com</v-card-subtitle>
            <v-card-subtitle style="margin-top: -20px">PHONE NO: 7894567525</v-card-subtitle>
            <h3 style="margin-left: 10px">DROP A MESSAGE</h3>
            <v-form>
