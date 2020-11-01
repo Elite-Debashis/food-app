@@ -43,4 +43,4 @@ npm run lint
 
 Hosted on Github Pages
 
-To check out the sample app click here 
+To check out the sample app click here (food-app)[https://elite-debashis.github.io/]
