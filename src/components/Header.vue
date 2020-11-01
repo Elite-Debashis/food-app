@@ -1,28 +1,5 @@
 <template>
   <header>
-<!--    <div class="header_logo">-->
-<!--      <img src="../assets/images/planet.png" alt="pizza planet icon" />-->
-<!--      <h1 class href="/">PIZZA PLANET</h1>-->
-<!--    </div>-->
-<!--    <nav>-->
-<!--      <ul>-->
-<!--        <router-link :to="{ name: 'homeLink' }" tag="li">-->
-<!--          <a>home</a>-->
-<!--        </router-link>-->
-<!--        <span>~</span>-->
-<!--        <router-link :to="{ name: 'menuLink' }" tag="li">-->
-<!--          <a>menu</a>-->
-<!--        </router-link>-->
-<!--        <span>~</span>-->
-<!--        <router-link :to="{ name: 'contactLink' }" tag="li">-->
-<!--          <a>contact us</a>-->
-<!--        </router-link>-->
-<!--        <span>~</span>-->
-<!--        <router-link :to="{ name: 'aboutLink' }" tag="li">-->
-<!--          <a>about us</a>-->
-<!--        </router-link>-->
-<!--      </ul>-->
-<!--    </nav>-->
     <v-app-bar app color="white" height="55px" scroll-off-screen>
       <v-toolbar-title>
         FOOD PLANET

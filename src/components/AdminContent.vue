@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section style="margin-top: 70px">
     <div class="current_user_wrapper">
       <span>Logged in as:</span>
       {{currentUser}}

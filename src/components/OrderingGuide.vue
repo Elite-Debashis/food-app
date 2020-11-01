@@ -21,7 +21,7 @@
 
     </v-img>
     <v-card-title>{{ card.title }}</v-card-title>
-    <v-card-subtitle>{{card.subTitle}}</v-card-subtitle>
+    <v-card-subtitle style="margin-top: -25px">{{card.subTitle}}</v-card-subtitle>
     <v-card-text>{{card.text}}</v-card-text>
   </v-card>
 </template>

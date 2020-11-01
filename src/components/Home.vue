@@ -63,22 +63,22 @@ export default {
       {
         title: 'TITLE',
         subTitle: 'SUBTITLE',
-        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis officia rerum explicabo quia natus non temporibus debitis quod aliquid necessitatibus sit laudantium doloremque ipsum dolor, quibusdam quas ullam delectus at.',
+        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis officia rerum explicabo quia natus non temporibus debitis quod aliquid necessitatibus.',
         url: 'https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466__340.jpg'
       },{
         title: 'TITLE',
         subTitle: 'SUBTITLE',
-        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis officia rerum explicabo quia natus non temporibus debitis quod aliquid necessitatibus sit laudantium doloremque ipsum dolor, quibusdam quas ullam delectus at.',
+        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis officia rerum explicabo quia natus non temporibus debitis quod aliquid necessitatibus .',
         url: 'https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466__340.jpg'
       },{
         title: 'TITLE',
         subTitle: 'SUBTITLE',
-        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis officia rerum explicabo quia natus non temporibus debitis quod aliquid necessitatibus sit laudantium doloremque ipsum dolor, quibusdam quas ullam delectus at.',
+        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis officia rerum explicabo quia natus non temporibus debitis quod aliquid necessitatibus .',
         url: 'https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466__340.jpg'
       },{
         title: 'TITLE',
         subTitle: 'SUBTITLE',
-        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis officia rerum explicabo quia natus non temporibus debitis quod aliquid necessitatibus sit laudantium doloremque ipsum dolor, quibusdam quas ullam delectus at.',
+        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis officia rerum explicabo quia natus non temporibus debitis quod aliquid necessitatibus .',
         url: 'https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466__340.jpg'
       },
 

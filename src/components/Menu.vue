@@ -27,6 +27,7 @@
 <!--      </table>-->
 <!--    </div>-->
     <v-container style="margin-top: 55px">
+      <h2 class="text-h2">Cart</h2>
        <v-card
            class="mx-auto"
            elevation="2"
@@ -73,6 +74,10 @@
            </v-row>
          </v-col>
        </v-card>
+      <h2 class="text-h2">Orders</h2>
+      <v-card><v-card-title>Orders Here</v-card-title>
+      <v-card-subtitle>THIS IS SUBTITLE</v-card-subtitle>
+      </v-card>
     </v-container>
 
     <!-- shopping basket -->
