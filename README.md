@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a simple food delivery web-app created using VueJs and Cloud Firestore. It consists of a menu and an order page for the user. It has also the admin page to add or manage items with admins only access. It has convinient state management system using vuex and vuexfire.
+This is a simple food delivery web-app created using VueJs and Cloud Firestore. It consists of a menu and an order page for the user. It has also the admin page to add or manage items with admins only access. It has convinient state management system using vuex and vuexfire. I have used dummy-text to fullfill the text area.
 
 ## Features
 
