@@ -5,6 +5,7 @@ import { store } from './store/store.js'
 import Accounting from 'accounting-js'
 import { routes } from './routes';
 import vuetify from './plugins/vuetify';
+import './style.css'
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)

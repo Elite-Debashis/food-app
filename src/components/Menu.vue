@@ -1,32 +1,8 @@
 
 <template>
   <div class="menu_wrapper">
-    <!-- menu -->
-<!--    <div class="menu">-->
-<!--      <h3>~ Authenic handmade pizza ~</h3>-->
-<!--      <table>-->
-<!--        <tbody v-for="item in getMenuItems" :key="item.id">-->
-<!--          <tr>-->
-<!--            <td>-->
-<!--              <strong>~ {{ item.name }} ~</strong>-->
-<!--            </td>-->
-<!--          </tr>-->
-<!--          <tr>-->
-<!--            <td>-->
-<!--              <small>{{ item.description }}</small>-->
-<!--            </td>-->
-<!--          </tr>-->
-<!--          <tr v-for="(option, index) in item.options" :key="option[index]">-->
-<!--            <td>{{ option.size }}"</td>-->
-<!--            <td>{{ option.price | currency}}</td>-->
-<!--            <td>-->
-<!--              <button type="button" class="btn_green" @click="addToBasket( item, option )">+</button>-->
-<!--            </td>-->
-<!--          </tr>-->
-<!--        </tbody>-->
-<!--      </table>-->
-<!--    </div>-->
-    <v-container style="margin-top: 55px">
+
+    <v-container class="default-font" style="margin-top: 55px">
       <h2 class="text-h2">MENU</h2>
        <v-card
            class="mx-auto"
@@ -164,32 +140,6 @@
         </v-card>
       </v-row>
     </v-container>
-
-    <!-- shopping basket -->
-<!--    <div class="basket">-->
-<!--      <h3>~ Basket ~</h3>-->
-<!--      <div v-if="basket.length > 0">-->
-<!--        <table>-->
-<!--          <tbody v-for="(item, index) in basket" :key="index">-->
-<!--            <tr>-->
-<!--              <td>-->
-<!--                <button @click="decreaseQuantity(item)" class="btn_green" type="button">&#8722;</button>-->
-<!--                <span>{{ item.quantity }}</span>-->
-<!--                <button @click="increaseQuantity(item)" class="btn_green" type="button">&#43;</button>-->
-<!--              </td>-->
-<!--              <td>{{ item.name }} {{ item.size }}"</td>-->
-<!--              <td>{{ item.price * item.quantity | currency}}</td>-->
-<!--            </tr>-->
-<!--          </tbody>-->
-<!--        </table>-->
-<!--        <p>Order total: {{ total | currency }}</p>-->
-<!--        <button class="btn_green" @click="addNewOrder">Place Order</button>-->
-<!--      </div>-->
-<!--      &lt;!&ndash; v-if &ndash;&gt;-->
-<!--      <div v-else>-->
-<!--        <p>{{ basketText }}</p>-->
-<!--      </div>-->
-<!--    </div>-->
   </div>
 </template>
 

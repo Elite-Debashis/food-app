@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="default-font">
     <v-app-bar app color="white" height="55px" scroll-off-screen>
       <v-toolbar-title>
         FOOD PLANET
