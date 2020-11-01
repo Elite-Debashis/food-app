@@ -6,8 +6,6 @@ const Menu = () => import('./components/Menu.vue')
 const About = () => import('./components/About.vue')
 
 import Contact from './components/Contact.vue'
-import Delivery from './components/Delivery.vue'
-import History from './components/History.vue'
 import OrderingGuide from './components/OrderingGuide.vue'
 
 //import Admin from './components/Admin.vue'
@@ -21,8 +19,6 @@ export const routes = [
     {
       default: Home,
       "ordering-guide": OrderingGuide,
-      "delivery": Delivery,
-      "history": History
     }
   },
   { path: '/menu', name: 'menuLink', component: Menu },
@@ -39,7 +35,6 @@ export const routes = [
   {
     path: '/about', name: 'aboutLink', component: About, children: [
       { path: 'history', name: 'historyLink', component: History },
-      { path: 'delivery', name: 'deliveryLink', component: Delivery },
       { path: 'ordering-guide', name: 'orderingGuideLink', component: OrderingGuide }
     ]
   },

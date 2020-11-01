@@ -1,27 +1,24 @@
 <template>
-<!--  <div class="background">-->
-<!--    <div class="background-overlay">-->
-<!--      <h2>Welcome to Pizza Planet!</h2>-->
-<!--      <img src="../assets/images/roller.png" alt="roller" />-->
-<!--      <h3>Feeling hungry?</h3>-->
-<!--      <button class="order_btn" @click="goToMenu">Let's order!</button>-->
-<!--    </div>-->
-<!--  </div>-->
   <v-carousel v-model="model" hide-delimiter-background :show-arrows="false">
-    <v-carousel-item>
-      <v-img src="https://wallpapercave.com/wp/wp3495545.jpg">
+    <v-carousel-item v-for="(slide) in slides" :key="slide.title">
 
-      </v-img>
-    </v-carousel-item>
-    <v-carousel-item>
-      <v-img src="https://wallpaperaccess.com/full/271687.jpg">
+      <v-img :src="require('../assets/images/pizza1.jpg')">
+        <v-container
+            fill-height
+            fluid
+            pa-0 ma-0
 
+        >
+          <v-layout fill-height align-end>
+            <v-flex xs12>
+              <v-card color="red" class="pa-2" >
+                <span class="headline white--text" v-text="slide.title">                               </span>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </v-container>
       </v-img>
-    </v-carousel-item>
-    <v-carousel-item>
-      <v-img src="https://santinospizza.co.uk/assets/front/images/slider/slider-1.jpg">
 
-      </v-img>
     </v-carousel-item>
   </v-carousel>
 </template>
@@ -37,6 +34,20 @@ export default {
       'red',
       'orange',
     ],
+    slides: [
+      {
+        title: "TITLE 1",
+        url: '../assets/images/pizza1.jpg'
+      },
+      {
+        title: "TITLE 2",
+        url: '../assets/images/pizza2.jpg'
+      },
+      {
+        title: "TITLE 3",
+        url: '../assets/images/pizza3.jpg'
+      }
+    ]
   }),
   name: "home",
   methods: {

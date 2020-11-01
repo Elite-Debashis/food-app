@@ -1,11 +1,12 @@
 <template>
-  <div id="app">
+  <div id="app" class="default-font">
     <app-header></app-header>
     <router-view></router-view>
-    <div class="info_block_wrapper">
-      <router-view name="ordering-guide"></router-view>
-      <router-view name="delivery"></router-view>
-      <router-view name="history"></router-view>
+    <div class="info_block_wrapper ">
+      <div v-for="(card,i) in cards" :key="i" style="margin-top: 50px">
+        <ordering-guide :card="card"></ordering-guide>
+      </div>
+
     </div>
   </div>
 </template>
@@ -13,15 +14,45 @@
 <script>
 import Header from "./components/Header.vue";
 import { dbMenuRef, dbOrdersRef } from "./firebase";
+import OrderingGuide from "@/components/OrderingGuide";
 export default {
   name: "app",
   components: {
     // should not use reserved header element name
-    appHeader: Header
+    appHeader: Header,
+    orderingGuide: OrderingGuide
   },
   created() {
     this.$store.dispatch("setMenuRef", dbMenuRef);
     this.$store.dispatch("setOrdersRef", dbOrdersRef);
+  },
+  data() {
+    return {
+      cards: [
+          {
+        title: 'TITLE',
+        subTitle: 'SUBTITLE',
+        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis officia rerum explicabo quia natus non temporibus debitis quod aliquid necessitatibus sit laudantium doloremque ipsum dolor, quibusdam quas ullam delectus at.',
+        url: 'https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466__340.jpg'
+      },{
+        title: 'TITLE',
+        subTitle: 'SUBTITLE',
+        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis officia rerum explicabo quia natus non temporibus debitis quod aliquid necessitatibus sit laudantium doloremque ipsum dolor, quibusdam quas ullam delectus at.',
+        url: 'https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466__340.jpg'
+      },{
+        title: 'TITLE',
+        subTitle: 'SUBTITLE',
+        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis officia rerum explicabo quia natus non temporibus debitis quod aliquid necessitatibus sit laudantium doloremque ipsum dolor, quibusdam quas ullam delectus at.',
+        url: 'https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466__340.jpg'
+      },{
+        title: 'TITLE',
+        subTitle: 'SUBTITLE',
+        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis officia rerum explicabo quia natus non temporibus debitis quod aliquid necessitatibus sit laudantium doloremque ipsum dolor, quibusdam quas ullam delectus at.',
+        url: 'https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466__340.jpg'
+      },
+
+      ]
+    }
   }
 };
 </script>
@@ -108,4 +139,12 @@ button {
     max-width: 100%;
   }
 }
+@font-face {
+  font-family: Itim;
+  src: url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+}
+ .default-font {
+font-family: Itim;
+ }
+
 </style>

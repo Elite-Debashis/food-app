@@ -8,24 +8,29 @@
 <!--  </div>-->
   <v-card
   class="mx-auto"
-  width="500"
+  width="300"
+  height="400"
   style="margin: 10px"
+  elevation="5"
 
   >
     <v-img
     class="white--text align-end"
-    src="https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466__340.jpg"
+    :src="card.url"
     >
 
     </v-img>
-    <v-card-title>HOW TO ORDER</v-card-title>
-    <v-card-subtitle>SUBTITLE</v-card-subtitle>
-    <v-card-text>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis officia rerum explicabo quia natus non temporibus debitis quod aliquid necessitatibus sit laudantium doloremque ipsum dolor, quibusdam quas ullam delectus at.</v-card-text>
+    <v-card-title>{{ card.title }}</v-card-title>
+    <v-card-subtitle>{{card.subTitle}}</v-card-subtitle>
+    <v-card-text>{{card.text}}</v-card-text>
   </v-card>
 </template>
 
 <script>
 export default {
-  name: "orderingGuide"
+  name: "orderingGuide",
+  props:['card']
 };
 </script>
+
+
