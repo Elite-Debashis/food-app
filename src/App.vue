@@ -9,7 +9,6 @@
 <script>
 import Header from "./components/Header.vue";
 import { dbMenuRef, dbOrdersRef } from "./firebase";
-import OrderingGuide from "@/components/OrderingGuide";
 export default {
   name: "app",
   components: {
