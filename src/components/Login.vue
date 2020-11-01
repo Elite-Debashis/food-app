@@ -18,6 +18,7 @@
 
 <script>
 import { store } from "../store/store.js";
+import Firebase from 'firebase'
 
 export default {
   name: "login",
@@ -34,6 +35,18 @@ export default {
         password: this.password
       };
       store.dispatch("signIn", user);
+    },
+    signOut() {
+      Firebase.auth().signOut().then(function() {
+        alert('logged out');
+      }).catch(function(error) {
+        alert(error);
+      })
+    }
+  },
+  computed: {
+    currentUser() {
+      return this.$store.getters.currentUser
     }
   }
 };

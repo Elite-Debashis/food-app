@@ -5,6 +5,7 @@ import orders from './modules/orders'
 import users from './modules/users'
 import { vuexfireMutations } from 'vuexfire'
 
+
 Vue.use(Vuex)
 
 export const store = new Vuex.Store({
@@ -13,6 +14,7 @@ export const store = new Vuex.Store({
     menu,
     orders,
     users,
-  }
+  },
+
 })
 
