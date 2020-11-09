@@ -1,6 +1,6 @@
 <template>
   <form>
-    <h3>Add new pizza:</h3>
+    <h3>Add new item:</h3>
     <div class="form_group">
       <label>Name</label>
       <input type="text" id="name" v-model="newPizza.name" />

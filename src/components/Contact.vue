@@ -35,6 +35,7 @@
          <v-card-actions>
            <v-btn
            block
+           @click="alert('Message')"
            color="#892cdc"
            >SEND</v-btn>
          </v-card-actions>
